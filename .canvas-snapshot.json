@@ -4,7 +4,7 @@
     "title": "Quiz 4 - Conditionals",
     "html_url": "https://learning.flatironschool.com/courses/6675/quizzes/44747",
     "mobile_url": "https://learning.flatironschool.com/courses/6675/quizzes/44747?force_user=1&persist_headless=1",
-    "description": "<div id=\"git-data-element\" data-org=\"learn-co-curriculum\" data-repo=\"java-mod-1-conditionals-quiz\"></div>\n<header class=\"fis-header\">\n  <a class=\"fis-git-link\" href=\"https://github.com/learn-co-curriculum/java-mod-1-conditionals-quiz/issues/new\" target=\"_blank\"><img id=\"issue-img\" title=\"Create New Issue\" alt=\"Create New Issue\"></a>\n</header>\n\n<p>It's time to check your knowledge! Use this quiz to create a custom study guide.\nNote any answers that were marked incorrect, so you can study the relevant\nmaterial and try this quiz again.</p>\n\n<p>If you don't know the answer to a question, please do not guess. Instead, select\n\"I don't know\". It's OK not to know everything and to admit when we're unsure.</p>",
+    "description": "<div id=\"git-data-element\" data-org=\"learn-co-curriculum\" data-repo=\"java-mod-1-conditionals-quiz\"></div>\n<header class=\"fis-header\">\n  <a class=\"fis-git-link\" href=\"https://github.com/learn-co-curriculum/java-mod-1-conditionals-quiz/issues/new\" target=\"_blank\"><img id=\"issue-img\" title=\"Create New Issue\" alt=\"Create New Issue\"></a>\n</header>\n\n<p>It's time to check your knowledge! Note any answers that were marked incorrect,\nso you can study the relevant material and try this quiz again.</p>",
     "quiz_type": "assignment",
     "time_limit": null,
     "timer_autosubmit_disabled": false,
@@ -71,7 +71,7 @@
     "only_visible_to_overrides": false,
     "assignment_group_id": 20000,
     "show_correct_answers_last_attempt": true,
-    "version_number": 3,
+    "version_number": 4,
     "has_access_code": false,
     "post_to_sis": false,
     "migration_id": null,
@@ -87,30 +87,64 @@
       "quiz_group_id": null,
       "assessment_question_id": 524971,
       "position": null,
-      "question_name": "Short Answer Question",
-      "question_type": "short_answer_question",
-      "question_text": "<p>A/an _____ is simply a well-defined procedure, or set of instructions, for\naccomplishing a specific task.</p>",
+      "question_name": "Multiple Dropdowns Question",
+      "question_type": "multiple_dropdowns_question",
+      "question_text": "<p>Consider the following code:</p>\n<div class=\"highlight\"><pre class=\"highlight java\"><code><span class=\"kn\">import</span> <span class=\"nn\">java.util.InputMismatchException</span><span class=\"o\">;</span>\n<span class=\"kn\">import</span> <span class=\"nn\">java.util.Scanner</span><span class=\"o\">;</span>\n\n<span class=\"kd\">public</span> <span class=\"kd\">class</span> <span class=\"nc\">Main</span> <span class=\"o\">{</span>\n    <span class=\"kd\">public</span> <span class=\"kd\">static</span> <span class=\"kt\">void</span> <span class=\"nf\">main</span> <span class=\"o\">(</span><span class=\"nc\">String</span><span class=\"o\">[]</span> <span class=\"n\">args</span><span class=\"o\">)</span> <span class=\"o\">{</span>\n        <span class=\"nc\">Scanner</span> <span class=\"n\">scanner</span> <span class=\"o\">=</span> <span class=\"k\">new</span> <span class=\"nc\">Scanner</span><span class=\"o\">(</span><span class=\"nc\">System</span><span class=\"o\">.</span><span class=\"na\">in</span><span class=\"o\">);</span>\n\n        <span class=\"k\">try</span> <span class=\"o\">{</span>\n            <span class=\"c1\">// Prompt the user to enter a temperature in Fahrenheit</span>\n            <span class=\"nc\">System</span><span class=\"o\">.</span><span class=\"na\">out</span><span class=\"o\">.</span><span class=\"na\">println</span><span class=\"o\">(</span><span class=\"s\">\"Enter a temperature in degrees Fahrenheit:\"</span><span class=\"o\">);</span>\n            <span class=\"kt\">double</span> <span class=\"n\">temperature</span> <span class=\"o\">=</span> <span class=\"n\">scanner</span><span class=\"o\">.</span><span class=\"na\">nextDouble</span><span class=\"o\">();</span>\n\n            <span class=\"c1\">// If temperature is 32 degrees or below, alert the user it is freezing!</span>\n            <span class=\"k\">if</span> <span class=\"o\">(</span><span class=\"n\">temperature</span> <span class=\"o\">&lt;=</span> <span class=\"mf\">32.0</span><span class=\"o\">)</span> <span class=\"o\">{</span>\n                <span class=\"nc\">System</span><span class=\"o\">.</span><span class=\"na\">out</span><span class=\"o\">.</span><span class=\"na\">println</span><span class=\"o\">(</span><span class=\"s\">\"Brr it's freezing!\"</span><span class=\"o\">);</span>\n            <span class=\"o\">}</span>\n\n        <span class=\"o\">}</span> <span class=\"k\">catch</span> <span class=\"o\">(</span><span class=\"nc\">InputMismatchException</span> <span class=\"n\">exception</span><span class=\"o\">)</span> <span class=\"o\">{</span>\n            <span class=\"nc\">System</span><span class=\"o\">.</span><span class=\"na\">out</span><span class=\"o\">.</span><span class=\"na\">println</span><span class=\"o\">(</span><span class=\"s\">\"Invalid input\"</span><span class=\"o\">);</span>\n        <span class=\"o\">}</span>\n    <span class=\"o\">}</span>\n<span class=\"o\">}</span>\n</code></pre></div>\n<p>When the user enters in 98.5 as a value, the program outputs: [a1]</p>\n\n<p>When the user enters in 17 as a value, the program outputs: [a2]</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
       "neutral_comments": "",
       "correct_comments_html": "",
       "incorrect_comments_html": "",
-      "neutral_comments_html": "",
+      "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"https://learning.flatironschool.com/courses/6675/pages/if-statement?module_item_id=538072\">Review the If Statement Lesson</a></li></ul><p></p>",
       "answers": [
         {
-          "id": "6321",
-          "text": "algorithm",
+          "id": 1117,
+          "text": "Nothing",
           "comments": "",
-          "comments_html": "",
-          "weight": 100
+          "comments_html": "<p>Correct! The program will not print anything if the user input is greater\nthan 32.0 degrees.</p>",
+          "weight": 100.0,
+          "blank_id": "a1"
         },
         {
-          "id": "1916",
-          "text": "Algorithm",
+          "id": 7496,
+          "text": "Brr it's freezing!",
           "comments": "",
-          "comments_html": "",
-          "weight": 100
+          "comments_html": "<p>Not quite. The execution will skip over the <code>if</code> statement since the input is\ngreater than 32.0.\n<img src=\"https://curriculum-content.s3.amazonaws.com/java-mod-1/conditionals-quiz/conditional-quiz-question-1.png\" alt=\"flowchart\"></p>",
+          "weight": 0.0,
+          "blank_id": "a1"
+        },
+        {
+          "id": 9918,
+          "text": "Invalid input",
+          "comments": "",
+          "comments_html": "<p>Not quite. 98.5 is a valid input.</p>",
+          "weight": 0.0,
+          "blank_id": "a1"
+        },
+        {
+          "id": 4001,
+          "text": "Brr it's freezing!",
+          "comments": "",
+          "comments_html": "<p>Correct! The program will print the message inside the <code>if</code> block since the\ninput is less than or equal to the freezing point, 32.0.</p>",
+          "weight": 100.0,
+          "blank_id": "a2"
+        },
+        {
+          "id": 8218,
+          "text": "Nothing",
+          "comments": "",
+          "comments_html": "<p>Not quite. The execution will fall into the <code>if</code> block and print the message\nsince the input is less than or equal to 32.0.\n<img src=\"https://curriculum-content.s3.amazonaws.com/java-mod-1/conditionals-quiz/conditional-quiz-question-1.png\" alt=\"flowchart\"></p>",
+          "weight": 0.0,
+          "blank_id": "a2"
+        },
+        {
+          "id": 6388,
+          "text": "Invalid input",
+          "comments": "",
+          "comments_html": "<p>Not quite. 17 is a valid input.</p>",
+          "weight": 0.0,
+          "blank_id": "a2"
         }
       ],
       "variables": null,
@@ -128,53 +162,45 @@
       "position": null,
       "question_name": "Multiple Choice Question",
       "question_type": "multiple_choice_question",
-      "question_text": "<p>Calculate the <strong>time complexity</strong> for the following code using Big O notation:</p>\n<div class=\"highlight\"><pre class=\"highlight javascript\"><code><span class=\"kd\">function</span> <span class=\"nx\">logLetter</span><span class=\"p\">(</span><span class=\"nx\">string</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n  <span class=\"k\">for</span> <span class=\"p\">(</span><span class=\"kd\">const</span> <span class=\"nx\">letter</span> <span class=\"k\">of</span> <span class=\"nx\">string</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n    <span class=\"nx\">console</span><span class=\"p\">.</span><span class=\"nx\">log</span><span class=\"p\">(</span><span class=\"nx\">letter</span><span class=\"p\">);</span>\n  <span class=\"p\">}</span>\n<span class=\"p\">}</span>\n</code></pre></div>",
+      "question_text": "<p>Consider the following code:</p>\n<div class=\"highlight\"><pre class=\"highlight java\"><code><span class=\"kn\">import</span> <span class=\"nn\">java.util.Random</span><span class=\"o\">;</span>\n\n<span class=\"kd\">public</span> <span class=\"kd\">class</span> <span class=\"nc\">Main</span> <span class=\"o\">{</span>\n    <span class=\"kd\">public</span> <span class=\"kd\">static</span> <span class=\"kt\">void</span> <span class=\"nf\">main</span> <span class=\"o\">(</span><span class=\"nc\">String</span><span class=\"o\">[]</span> <span class=\"n\">args</span><span class=\"o\">)</span> <span class=\"o\">{</span>\n        <span class=\"nc\">Random</span> <span class=\"n\">random</span> <span class=\"o\">=</span> <span class=\"k\">new</span> <span class=\"nc\">Random</span><span class=\"o\">();</span>\n\n        <span class=\"kt\">boolean</span> <span class=\"n\">isRainy</span> <span class=\"o\">=</span> <span class=\"n\">random</span><span class=\"o\">.</span><span class=\"na\">nextBoolean</span><span class=\"o\">();</span>\n\n        <span class=\"c1\">// Tell the user the weather forecast for the day</span>\n        <span class=\"k\">if</span> <span class=\"o\">(</span><span class=\"n\">isRainy</span><span class=\"o\">)</span> <span class=\"o\">{</span>\n            <span class=\"nc\">System</span><span class=\"o\">.</span><span class=\"na\">out</span><span class=\"o\">.</span><span class=\"na\">println</span><span class=\"o\">(</span><span class=\"s\">\"It's rainy outside today! Better stay inside.\"</span><span class=\"o\">);</span>\n        <span class=\"o\">}</span> <span class=\"k\">else</span> <span class=\"o\">{</span>\n            <span class=\"nc\">System</span><span class=\"o\">.</span><span class=\"na\">out</span><span class=\"o\">.</span><span class=\"na\">println</span><span class=\"o\">(</span><span class=\"s\">\"It's sunny outside today! What a beautiful day.\"</span><span class=\"o\">);</span>\n        <span class=\"o\">}</span>\n    <span class=\"o\">}</span>\n<span class=\"o\">}</span>\n</code></pre></div>\n<p>What does the program output when <code>weather</code> is randomly assigned to <code>true</code>?</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
       "neutral_comments": "",
       "correct_comments_html": "",
       "incorrect_comments_html": "",
-      "neutral_comments_html": "",
+      "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"https://learning.flatironschool.com/courses/6675/pages/if-else-statement?module_item_id=539035\">Review the If-Else Statement Lesson</a></li></ul><p></p>",
       "answers": [
         {
-          "id": 7559,
+          "id": 9728,
           "text": "",
-          "html": "<p>O(n)</p>",
+          "html": "<p>It's rainy outside today! Better stay inside.</p>",
           "comments": "",
-          "comments_html": "<p>Correct! Since the algorithm needs to iterate through each letter of the input,\nthe time complexity will grow in linear proportion to the size of the input.</p>",
+          "comments_html": "<p>Correct! Since the <code>random.nextBoolean()</code> randomly assigned the <code>weather</code>\nvariable to <code>true</code>, the execution will fall into the <code>if</code> block and print the\nrainy message.</p>",
           "weight": 100.0
         },
         {
-          "id": 9611,
+          "id": 2547,
           "text": "",
-          "html": "<p>O(1)</p>",
+          "html": "<p>Nothing</p>",
           "comments": "",
-          "comments_html": "<p>Not quite. O(1) would mean the algorithm's runtime stays the same regardless of\nhow large the input is.</p>",
+          "comments_html": "<p>Not quite. This program will always print something since there is a\n<code>System.out.println()</code> statement in both the <code>if</code> and the <code>else</code> blocks.\n<img src=\"https://curriculum-content.s3.amazonaws.com/java-mod-1/conditionals-quiz/conditional-quiz-question-2.png\" alt=\"flowchart\"></p>",
           "weight": 0.0
         },
         {
-          "id": 4638,
+          "id": 3457,
           "text": "",
-          "html": "<p>O(n²)</p>",
+          "html": "<p>It's sunny outside today! What a beautiful day.</p>",
           "comments": "",
-          "comments_html": "<p>Not quite. O(n²) would mean the algorithm's runtime grows exponentially as the\nsize of the input grows, like an algorithm that involved a nested loop.</p>",
+          "comments_html": "<p>Not quite. Since the <code>random.nextBoolean()</code> randomly assigned the <code>weather</code>\nvariable to <code>true</code>, the message in the <code>else</code> block will not be printed at all\nsince the execution will skip over it.\n<img src=\"https://curriculum-content.s3.amazonaws.com/java-mod-1/conditionals-quiz/conditional-quiz-question-2.png\" alt=\"flowchart\"></p>",
           "weight": 0.0
         },
         {
-          "id": 9570,
+          "id": 3522,
           "text": "",
-          "html": "<p>O(log n)</p>",
+          "html": "<p>It's rainy outside today! Better stay inside.\nIt's sunny outside today! What a beautiful day.</p>",
           "comments": "",
-          "comments_html": "<p>Not quite. O(log n) would mean that the algorithm's time complexity grows in a\nlogarithmic proportion to the size of the input (so an input of size 1 would\ntake 1 step, size 10 would take 2 steps, size 100 would take 3 steps, etc).</p>",
-          "weight": 0.0
-        },
-        {
-          "id": 2042,
-          "text": "",
-          "html": "<p>I don't know</p>",
-          "comments": "",
-          "comments_html": "<p>Be sure to study the source/s for this question. You'll get it next time.</p>",
+          "comments_html": "<p>Not quite. Since the <code>random.nextBoolean()</code> randomly assigned the <code>weather</code>\nvariable to <code>true</code>, the message in the <code>else</code> block will not be printed at all\nsince the execution will skip over it. It will <em>only</em> execute the\nstatements within the <code>if</code> block.\n<img src=\"https://curriculum-content.s3.amazonaws.com/java-mod-1/conditionals-quiz/conditional-quiz-question-2.png\" alt=\"flowchart\"></p>",
           "weight": 0.0
         }
       ],
@@ -191,56 +217,48 @@
       "quiz_group_id": null,
       "assessment_question_id": 524973,
       "position": null,
-      "question_name": "Multiple Answers Question",
-      "question_type": "multiple_answers_question",
-      "question_text": "<p>We have a variable <code>lunch_menu</code>, set equal to an array of lunch menu items:</p>\n<div class=\"highlight\"><pre class=\"highlight ruby\"><code><span class=\"n\">lunch_menu</span> <span class=\"o\">=</span> <span class=\"p\">[</span><span class=\"s2\">\"pizza\"</span><span class=\"p\">,</span> <span class=\"s2\">\"sandwich\"</span><span class=\"p\">,</span> <span class=\"s2\">\"sushi\"</span><span class=\"p\">,</span> <span class=\"s2\">\"soup\"</span><span class=\"p\">,</span> <span class=\"s2\">\"salad\"</span><span class=\"p\">]</span>\n</code></pre></div>\n<p>Since you're super hungry and super excited about lunch, use the <code>.each</code> method\nto enumerate over the array and output a string to the terminal with each lunch\nmenu item with an <code>\"!\"</code> at the end.</p>\n\n<p>Which piece of code will achieve the desired result? Select all that apply:</p>",
+      "question_name": "Multiple Choice Question",
+      "question_type": "multiple_choice_question",
+      "question_text": "<p>Consider the following code:</p>\n<div class=\"highlight\"><pre class=\"highlight java\"><code><span class=\"kn\">import</span> <span class=\"nn\">java.util.Random</span><span class=\"o\">;</span>\n\n<span class=\"kd\">public</span> <span class=\"kd\">class</span> <span class=\"nc\">Main</span> <span class=\"o\">{</span>\n    <span class=\"kd\">public</span> <span class=\"kd\">static</span> <span class=\"kt\">void</span> <span class=\"nf\">main</span> <span class=\"o\">(</span><span class=\"nc\">String</span><span class=\"o\">[]</span> <span class=\"n\">args</span><span class=\"o\">)</span> <span class=\"o\">{</span>\n        <span class=\"nc\">Random</span> <span class=\"n\">random</span> <span class=\"o\">=</span> <span class=\"k\">new</span> <span class=\"nc\">Random</span><span class=\"o\">();</span>\n\n        <span class=\"kt\">boolean</span> <span class=\"n\">isRainy</span> <span class=\"o\">=</span> <span class=\"n\">random</span><span class=\"o\">.</span><span class=\"na\">nextBoolean</span><span class=\"o\">();</span>\n\n        <span class=\"c1\">// Tell the user the weather forecast for the day</span>\n        <span class=\"k\">if</span> <span class=\"o\">(</span><span class=\"n\">isRainy</span><span class=\"o\">)</span> <span class=\"o\">{</span>\n            <span class=\"nc\">System</span><span class=\"o\">.</span><span class=\"na\">out</span><span class=\"o\">.</span><span class=\"na\">println</span><span class=\"o\">(</span><span class=\"s\">\"It's rainy outside today! Better stay inside.\"</span><span class=\"o\">);</span>\n        <span class=\"o\">}</span> <span class=\"k\">else</span> <span class=\"o\">{</span>\n            <span class=\"nc\">System</span><span class=\"o\">.</span><span class=\"na\">out</span><span class=\"o\">.</span><span class=\"na\">println</span><span class=\"o\">(</span><span class=\"s\">\"It's sunny outside today! What a beautiful day.\"</span><span class=\"o\">);</span>\n        <span class=\"o\">}</span>\n    <span class=\"o\">}</span>\n<span class=\"o\">}</span>\n</code></pre></div>\n<p>What does the program output when <code>weather</code> is randomly assigned to <code>false</code>?</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
       "neutral_comments": "",
       "correct_comments_html": "",
       "incorrect_comments_html": "",
-      "neutral_comments_html": "",
+      "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"https://learning.flatironschool.com/courses/6675/pages/if-else-statement?module_item_id=539035\">Review the If-Else Statement Lesson</a></li></ul><p></p>",
       "answers": [
         {
-          "id": "7281",
+          "id": 9061,
           "text": "",
+          "html": "<p>It's rainy outside today! Better stay inside.</p>",
           "comments": "",
-          "comments_html": "<p>Correct! Using <code>each</code> lets us access each element of the array in the block,\nand we can output a string by using <code>puts</code>.</p>",
-          "weight": 100.0,
-          "html": "<div class=\"highlight\"><pre class=\"highlight ruby\"><code><span class=\"n\">lunch_menu</span><span class=\"p\">.</span><span class=\"nf\">each</span> <span class=\"k\">do</span> <span class=\"o\">|</span><span class=\"n\">lunch_item</span><span class=\"o\">|</span>\n  <span class=\"nb\">puts</span> <span class=\"n\">lunch_item</span> <span class=\"o\">+</span> <span class=\"s2\">\"!\"</span>\n<span class=\"k\">end</span>\n</code></pre></div>"
+          "comments_html": "<p>Note quite. Since the <code>random.nextBoolean()</code> randomly assigned the <code>weather</code>\nvariable to <code>false</code>, the execution will skip the <code>if</code> block and fall into the\n<code>else</code> block. So the rainy message never gets printed.\n<img src=\"https://curriculum-content.s3.amazonaws.com/java-mod-1/conditionals-quiz/conditional-quiz-question-2.png\" alt=\"flowchart\"></p>",
+          "weight": 0.0
         },
         {
-          "id": "3413",
+          "id": 4775,
           "text": "",
+          "html": "<p>Nothing</p>",
           "comments": "",
-          "comments_html": "<p>This code would result in an error, since <code>lunch_menu</code> is an array, and we\ncan't us the <code>+</code> method to add a string to the array. How can we iterate over\neach element?</p>",
-          "weight": 0.0,
-          "html": "<div class=\"highlight\"><pre class=\"highlight ruby\"><code><span class=\"nb\">puts</span> <span class=\"n\">lunch_menu</span> <span class=\"o\">+</span> <span class=\"s2\">\"!\"</span>\n</code></pre></div>"
+          "comments_html": "<p>Not quite. This program will always print something since there is a\n<code>System.out.println()</code> statement in both the <code>if</code> and the <code>else</code> blocks.\n<img src=\"https://curriculum-content.s3.amazonaws.com/java-mod-1/conditionals-quiz/conditional-quiz-question-2.png\" alt=\"flowchart\"></p>",
+          "weight": 0.0
         },
         {
-          "id": "482",
+          "id": 3406,
           "text": "",
+          "html": "<p>It's sunny outside today! What a beautiful day.</p>",
           "comments": "",
-          "comments_html": "<p>Correct! Using <code>each</code> lets us access each element of the array in the block,\nand we can output a string by using <code>puts</code>.</p>",
-          "weight": 100.0,
-          "html": "<div class=\"highlight\"><pre class=\"highlight ruby\"><code><span class=\"n\">lunch_menu</span><span class=\"p\">.</span><span class=\"nf\">each</span> <span class=\"k\">do</span> <span class=\"o\">|</span><span class=\"n\">lunch_item</span><span class=\"o\">|</span>\n  <span class=\"nb\">puts</span> <span class=\"s2\">\"</span><span class=\"si\">#{</span><span class=\"n\">lunch_item</span><span class=\"si\">}</span><span class=\"s2\">!\"</span>\n<span class=\"k\">end</span>\n</code></pre></div>"
+          "comments_html": "<p>Correct! Since the <code>random.nextBoolean()</code> randomly assigned the <code>weather</code>\nvariable to <code>false</code>, the execution will skip over the <code>if</code> statement, since\nthe conditional is not true, and fall into the <code>else</code> block. This is\nwhere it will print the sunny message.</p>",
+          "weight": 100.0
         },
         {
-          "id": "2350",
+          "id": 922,
           "text": "",
+          "html": "<p>It's rainy outside today! Better stay inside.\nIt's sunny outside today! What a beautiful day.</p>",
           "comments": "",
-          "comments_html": "<p>Using <code>each</code> lets us access each element of the array in the block, but this\nmethod doesn't output anything to the terminal since we aren't using <code>puts</code>.</p>",
-          "weight": 0.0,
-          "html": "<div class=\"highlight\"><pre class=\"highlight ruby\"><code><span class=\"n\">lunch_menu</span><span class=\"p\">.</span><span class=\"nf\">each</span> <span class=\"k\">do</span> <span class=\"o\">|</span><span class=\"n\">lunch_item</span><span class=\"o\">|</span>\n  <span class=\"s2\">\"</span><span class=\"si\">#{</span><span class=\"n\">lunch_item</span><span class=\"si\">}</span><span class=\"s2\">!\"</span>\n<span class=\"k\">end</span>\n</code></pre></div>"
-        },
-        {
-          "id": "5419",
-          "text": "",
-          "comments": "",
-          "comments_html": "<p>Be sure to study the source/s for this question. You'll get it next time.</p>",
-          "weight": 0.0,
-          "html": "<p>I don't know.</p>"
+          "comments_html": "<p>Not quite. Since the <code>random.nextBoolean()</code> randomly assigned the <code>weather</code>\nvariable to <code>false</code>, the message in the <code>if</code> block will not be printed at\nall since the execution will skip over it. It will <em>only</em> execute the\nstatements within the <code>else</code> block.\n<img src=\"https://curriculum-content.s3.amazonaws.com/java-mod-1/conditionals-quiz/conditional-quiz-question-2.png\" alt=\"flowchart\"></p>",
+          "weight": 0.0
         }
       ],
       "variables": null,
@@ -256,30 +274,112 @@
       "quiz_group_id": null,
       "assessment_question_id": 524974,
       "position": null,
-      "question_name": "True/False Question",
-      "question_type": "true_false_question",
-      "question_text": "<p>When we run <code>git add .</code>, <strong>all</strong> files that have been created or modified since\nthe last commit are staged and will be included in the next commit.&nbsp;</p>",
+      "question_name": "Multiple Dropdowns Question",
+      "question_type": "multiple_dropdowns_question",
+      "question_text": "<p>Consider the following code:</p>\n<div class=\"highlight\"><pre class=\"highlight java\"><code><span class=\"kn\">import</span> <span class=\"nn\">java.util.InputMismatchException</span><span class=\"o\">;</span>\n<span class=\"kn\">import</span> <span class=\"nn\">java.util.Scanner</span><span class=\"o\">;</span>\n\n<span class=\"kd\">public</span> <span class=\"kd\">class</span> <span class=\"nc\">Main</span> <span class=\"o\">{</span>\n    <span class=\"kd\">public</span> <span class=\"kd\">static</span> <span class=\"kt\">void</span> <span class=\"nf\">main</span> <span class=\"o\">(</span><span class=\"nc\">String</span><span class=\"o\">[]</span> <span class=\"n\">args</span><span class=\"o\">)</span> <span class=\"o\">{</span>\n        <span class=\"nc\">Scanner</span> <span class=\"n\">scanner</span> <span class=\"o\">=</span> <span class=\"k\">new</span> <span class=\"nc\">Scanner</span><span class=\"o\">(</span><span class=\"nc\">System</span><span class=\"o\">.</span><span class=\"na\">in</span><span class=\"o\">);</span>\n\n        <span class=\"k\">try</span> <span class=\"o\">{</span>\n            <span class=\"c1\">// Prompt the user to enter a temperature in Fahrenheit</span>\n            <span class=\"nc\">System</span><span class=\"o\">.</span><span class=\"na\">out</span><span class=\"o\">.</span><span class=\"na\">println</span><span class=\"o\">(</span><span class=\"s\">\"Enter a temperature in degrees Fahrenheit:\"</span><span class=\"o\">);</span>\n            <span class=\"kt\">double</span> <span class=\"n\">temperature</span> <span class=\"o\">=</span> <span class=\"n\">scanner</span><span class=\"o\">.</span><span class=\"na\">nextDouble</span><span class=\"o\">();</span>\n\n            <span class=\"c1\">// If temperature is 32 degrees or below, alert the user it is freezing!</span>\n            <span class=\"k\">if</span> <span class=\"o\">(</span><span class=\"n\">temperature</span> <span class=\"o\">&lt;=</span> <span class=\"mf\">32.0</span><span class=\"o\">)</span> <span class=\"o\">{</span>\n                <span class=\"nc\">System</span><span class=\"o\">.</span><span class=\"na\">out</span><span class=\"o\">.</span><span class=\"na\">println</span><span class=\"o\">(</span><span class=\"s\">\"Brr it's freezing!\"</span><span class=\"o\">);</span>\n            <span class=\"o\">}</span> <span class=\"k\">else</span> <span class=\"k\">if</span> <span class=\"o\">(</span><span class=\"n\">temperature</span> <span class=\"o\">&gt;=</span> <span class=\"mf\">212.0</span><span class=\"o\">)</span> <span class=\"o\">{</span>\n                <span class=\"c1\">// If the temperature is 212 degrees or higher, alert the user it is boiling</span>\n                <span class=\"nc\">System</span><span class=\"o\">.</span><span class=\"na\">out</span><span class=\"o\">.</span><span class=\"na\">println</span><span class=\"o\">(</span><span class=\"s\">\"It's boiling!\"</span><span class=\"o\">);</span>\n            <span class=\"o\">}</span>\n\n        <span class=\"o\">}</span> <span class=\"k\">catch</span> <span class=\"o\">(</span><span class=\"nc\">InputMismatchException</span> <span class=\"n\">exception</span><span class=\"o\">)</span> <span class=\"o\">{</span>\n            <span class=\"nc\">System</span><span class=\"o\">.</span><span class=\"na\">out</span><span class=\"o\">.</span><span class=\"na\">println</span><span class=\"o\">(</span><span class=\"s\">\"Invalid input\"</span><span class=\"o\">);</span>\n        <span class=\"o\">}</span>\n    <span class=\"o\">}</span>\n<span class=\"o\">}</span>\n</code></pre></div>\n<p>When the user enters in 98.5 as a value, the program outputs: [a1]</p>\n\n<p>When the user enters in 17 as a value, the program outputs: [a2]</p>\n\n<p>When the user enters in 212.0 as a value, the program outputs: [a3]</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
       "neutral_comments": "",
       "correct_comments_html": "",
       "incorrect_comments_html": "",
-      "neutral_comments_html": "",
+      "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"https://learning.flatironschool.com/courses/6675/pages/chained-conditional-statements?module_item_id=539036\">Review the Chained Conditional Statements Lesson</a></li></ul><p></p>",
       "answers": [
         {
+          "id": 8070,
+          "text": "Nothing",
           "comments": "",
-          "comments_html": "<p>Not quite. Be sure to review the <code>.gitignore</code> source for this question. You'll\nget it next time!</p>",
-          "text": "True",
-          "weight": 0,
-          "id": 8205
+          "comments_html": "<p>Correct! The program will not print anything if the user input is greater\nthan 32.0 degrees and less than 212.0 degrees.</p>",
+          "weight": 100.0,
+          "blank_id": "a1"
         },
         {
+          "id": 1823,
+          "text": "Brr it's freezing!",
           "comments": "",
-          "comments_html": "",
-          "text": "False",
-          "weight": 100,
-          "id": 1530
+          "comments_html": "<p>Not quite. The execution will skip over the <code>if</code> and <code>else if</code> statements\nsince the input is greater than 32.0 and less than 212.0 degrees.\n<img src=\"https://curriculum-content.s3.amazonaws.com/java-mod-1/conditionals-quiz/conditional-quiz-question-3.png\" alt=\"flowchart\"></p>",
+          "weight": 0.0,
+          "blank_id": "a1"
+        },
+        {
+          "id": 1259,
+          "text": "Invalid input",
+          "comments": "",
+          "comments_html": "<p>Not quite. 98.5 is a valid input.</p>",
+          "weight": 0.0,
+          "blank_id": "a1"
+        },
+        {
+          "id": 610,
+          "text": "It's boiling!",
+          "comments": "",
+          "comments_html": "<p>Not quite. The execution will skip over the <code>if</code> and <code>else if</code> statements\nsince the input is greater than 32.0 and less than 212.0 degrees.\n<img src=\"https://curriculum-content.s3.amazonaws.com/java-mod-1/conditionals-quiz/conditional-quiz-question-3.png\" alt=\"flowchart\"></p>",
+          "weight": 0.0,
+          "blank_id": "a1"
+        },
+        {
+          "id": 4017,
+          "text": "Brr it's freezing!",
+          "comments": "",
+          "comments_html": "<p>Correct! The program will print the message inside the <code>if</code> block since the\ninput is less than or equal to the freezing point, 32.0.</p>",
+          "weight": 100.0,
+          "blank_id": "a2"
+        },
+        {
+          "id": 2771,
+          "text": "It's boiling!",
+          "comments": "",
+          "comments_html": "<p>Not quite. The execution will not fall into the <code>else if</code> block since the\nfirst conditional specified in the <code>if</code> statement has been satisfied. The\nexecution will then skip over the <code>else if</code> block.\n<img src=\"https://curriculum-content.s3.amazonaws.com/java-mod-1/conditionals-quiz/conditional-quiz-question-3.png\" alt=\"flowchart\"></p>",
+          "weight": 0.0,
+          "blank_id": "a2"
+        },
+        {
+          "id": 5052,
+          "text": "Nothing",
+          "comments": "",
+          "comments_html": "<p>Not quite. The execution will fall into the <code>if</code> block and print the message\nsince the input is less than or equal to 32.0.\n<img src=\"https://curriculum-content.s3.amazonaws.com/java-mod-1/conditionals-quiz/conditional-quiz-question-3.png\" alt=\"flowchart\"></p>",
+          "weight": 0.0,
+          "blank_id": "a2"
+        },
+        {
+          "id": 837,
+          "text": "Invalid input",
+          "comments": "",
+          "comments_html": "<p>Not quite. 17 is a valid input.</p>",
+          "weight": 0.0,
+          "blank_id": "a2"
+        },
+        {
+          "id": 412,
+          "text": "It's boiling!",
+          "comments": "",
+          "comments_html": "<p>Correct! The program will print the message inside the <code>else if</code> block since\nthe input is greater than or equal to the boiling point, 212.0.</p>",
+          "weight": 100.0,
+          "blank_id": "a3"
+        },
+        {
+          "id": 2533,
+          "text": "Brr it's freezing!",
+          "comments": "",
+          "comments_html": "<p>Not quite. The execution will not fall into the <code>if</code> block since the input is\ngreater than 32.0. Instead, it will then check the conditional specified in\nthe <code>else if</code> statement. Since 212.0 is indeed greater than or equal to the\nboiling point, it will fall into the <code>else if</code> block.\n<img src=\"https://curriculum-content.s3.amazonaws.com/java-mod-1/conditionals-quiz/conditional-quiz-question-3.png\" alt=\"flowchart\"></p>",
+          "weight": 0.0,
+          "blank_id": "a3"
+        },
+        {
+          "id": 7968,
+          "text": "Nothing",
+          "comments": "",
+          "comments_html": "<p>Not quite. The execution will fall into the <code>else if</code> block and print the\nmessage since the input is greater than or equal to 212.0.\n<img src=\"https://curriculum-content.s3.amazonaws.com/java-mod-1/conditionals-quiz/conditional-quiz-question-3.png\" alt=\"flowchart\"></p>",
+          "weight": 0.0,
+          "blank_id": "a3"
+        },
+        {
+          "id": 2373,
+          "text": "Invalid input",
+          "comments": "",
+          "comments_html": "<p>Not quite. 212.0 is a valid input.</p>",
+          "weight": 0.0,
+          "blank_id": "a3"
         }
       ],
       "variables": null,
@@ -295,55 +395,56 @@
       "quiz_group_id": null,
       "assessment_question_id": 524975,
       "position": null,
-      "question_name": "Matching Question",
-      "question_type": "matching_question",
-      "question_text": "<p>Match the term with the correct description.</p>",
+      "question_name": "Multiple Choice Question",
+      "question_type": "multiple_choice_question",
+      "question_text": "<p>Which of the following is the correct syntax for the conditional operator?</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
       "neutral_comments": "",
       "correct_comments_html": "",
       "incorrect_comments_html": "",
-      "neutral_comments_html": "",
+      "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"https://learning.flatironschool.com/courses/6675/pages/conditional-operator?module_item_id=538074\">Review the Conditional Operator Lesson</a></li></ul><p></p>",
       "answers": [
         {
-          "id": "5375",
-          "text": "Declarative Programming",
-          "left": "Declarative Programming",
-          "right": "Describes what the end result should be, not the specific actions or steps to\nget to that result.",
+          "id": 7284,
+          "text": "",
+          "html": "<p>variable = (boolean expression) ? value if false : value if true;</p>",
           "comments": "",
           "comments_html": "",
-          "match_id": 8814
+          "weight": 0.0
         },
         {
-          "id": "8730",
-          "text": "Imperative Programming",
-          "left": "Imperative Programming",
-          "right": "Explicitly describes the specific actions or steps for getting to the end\nresult.",
+          "id": 6082,
+          "text": "",
+          "html": "<p>variable = (boolean expression) ? value if true : value if false;</p>",
           "comments": "",
           "comments_html": "",
-          "match_id": 8530
+          "weight": 100.0
+        },
+        {
+          "id": 1187,
+          "text": "",
+          "html": "<p>variable = value if true ? value if false : (boolean expression);</p>",
+          "comments": "",
+          "comments_html": "",
+          "weight": 0.0
+        },
+        {
+          "id": 4196,
+          "text": "",
+          "html": "<p>variable = value if false ? (boolean expression) : value if true;</p>",
+          "comments": "",
+          "comments_html": "",
+          "weight": 0.0
         }
       ],
       "variables": null,
       "formulas": null,
       "answer_tolerance": null,
       "formula_decimal_places": null,
-      "matches": [
-        {
-          "text": "Describes what the end result should be, not the specific actions or steps to\nget to that result.",
-          "match_id": 8814
-        },
-        {
-          "text": "Explicitly describes the specific actions or steps for getting to the end\nresult.",
-          "match_id": 8530
-        },
-        {
-          "text": "I don't know.",
-          "match_id": 1956
-        }
-      ],
-      "matching_answer_incorrect_matches": "I don't know."
+      "matches": null,
+      "matching_answer_incorrect_matches": null
     },
     {
       "id": 304494,
@@ -351,64 +452,23 @@
       "quiz_group_id": null,
       "assessment_question_id": 524976,
       "position": null,
-      "question_name": "Multiple Dropdowns Question",
-      "question_type": "multiple_dropdowns_question",
-      "question_text": "<div class=\"highlight\"><pre class=\"highlight ruby\"><code><span class=\"k\">module</span> <span class=\"nn\">Talk</span>\n  <span class=\"k\">module</span> <span class=\"nn\">Phrases</span>\n    <span class=\"k\">def</span> <span class=\"nf\">hello</span>\n      <span class=\"s2\">\"Hello!\"</span>\n    <span class=\"k\">end</span>\n\n    <span class=\"k\">def</span> <span class=\"nf\">goodbye</span>\n      <span class=\"s2\">\"Good bye!\"</span>\n    <span class=\"k\">end</span>\n  <span class=\"k\">end</span>\n\n  <span class=\"k\">module</span> <span class=\"nn\">Teachers</span>\n    <span class=\"k\">def</span> <span class=\"nf\">teach</span>\n      <span class=\"s2\">\"Repeat after me.\"</span>\n    <span class=\"k\">end</span>\n  <span class=\"k\">end</span>\n<span class=\"k\">end</span>\n</code></pre></div>\n<p>The code sample above is an example of [a1] modules. To access the <code>Teachers</code>\nmodule to include it in a class, we would type include [a2].</p>",
+      "question_name": "Short Answer Question",
+      "question_type": "short_answer_question",
+      "question_text": "<p>What is the output of the following program if the user enters in \"snowy\"?</p>\n<div class=\"highlight\"><pre class=\"highlight java\"><code><span class=\"kn\">import</span> <span class=\"nn\">java.util.Scanner</span><span class=\"o\">;</span>\n\n<span class=\"kd\">public</span> <span class=\"kd\">class</span> <span class=\"nc\">Main</span> <span class=\"o\">{</span>\n    <span class=\"kd\">public</span> <span class=\"kd\">static</span> <span class=\"kt\">void</span> <span class=\"nf\">main</span> <span class=\"o\">(</span><span class=\"nc\">String</span><span class=\"o\">[]</span> <span class=\"n\">args</span><span class=\"o\">)</span> <span class=\"o\">{</span>\n        <span class=\"nc\">Scanner</span> <span class=\"n\">scanner</span> <span class=\"o\">=</span> <span class=\"k\">new</span> <span class=\"nc\">Scanner</span><span class=\"o\">(</span><span class=\"nc\">System</span><span class=\"o\">.</span><span class=\"na\">in</span><span class=\"o\">);</span>\n\n        <span class=\"nc\">System</span><span class=\"o\">.</span><span class=\"na\">out</span><span class=\"o\">.</span><span class=\"na\">println</span><span class=\"o\">(</span><span class=\"s\">\"Enter the weather forecast for today:\"</span><span class=\"o\">);</span>\n        <span class=\"nc\">String</span> <span class=\"n\">weather</span> <span class=\"o\">=</span> <span class=\"n\">scanner</span><span class=\"o\">.</span><span class=\"na\">nextLine</span><span class=\"o\">();</span>\n\n        <span class=\"k\">switch</span> <span class=\"o\">(</span><span class=\"n\">weather</span><span class=\"o\">)</span> <span class=\"o\">{</span>\n            <span class=\"k\">case</span> <span class=\"s\">\"sunny\"</span><span class=\"o\">:</span>\n                <span class=\"nc\">System</span><span class=\"o\">.</span><span class=\"na\">out</span><span class=\"o\">.</span><span class=\"na\">println</span><span class=\"o\">(</span><span class=\"s\">\"It's sunny outside today\"</span><span class=\"o\">);</span>\n                <span class=\"k\">break</span><span class=\"o\">;</span>\n            <span class=\"k\">case</span> <span class=\"s\">\"rainy\"</span><span class=\"o\">:</span>\n                <span class=\"nc\">System</span><span class=\"o\">.</span><span class=\"na\">out</span><span class=\"o\">.</span><span class=\"na\">println</span><span class=\"o\">(</span><span class=\"s\">\"It's rainy outside today\"</span><span class=\"o\">);</span>\n                <span class=\"k\">break</span><span class=\"o\">;</span>\n            <span class=\"k\">case</span> <span class=\"s\">\"cloudy\"</span><span class=\"o\">:</span>\n                <span class=\"nc\">System</span><span class=\"o\">.</span><span class=\"na\">out</span><span class=\"o\">.</span><span class=\"na\">println</span><span class=\"o\">(</span><span class=\"s\">\"It's cloudy outside today\"</span><span class=\"o\">);</span>\n                <span class=\"k\">break</span><span class=\"o\">;</span>\n            <span class=\"k\">case</span> <span class=\"s\">\"snowy\"</span><span class=\"o\">:</span>\n                <span class=\"nc\">System</span><span class=\"o\">.</span><span class=\"na\">out</span><span class=\"o\">.</span><span class=\"na\">println</span><span class=\"o\">(</span><span class=\"s\">\"It's snowy outside today\"</span><span class=\"o\">);</span>\n                <span class=\"k\">break</span><span class=\"o\">;</span>\n            <span class=\"k\">default</span><span class=\"o\">:</span>\n                <span class=\"nc\">System</span><span class=\"o\">.</span><span class=\"na\">out</span><span class=\"o\">.</span><span class=\"na\">println</span><span class=\"o\">(</span><span class=\"s\">\"We aren't sure about the weather today\"</span><span class=\"o\">);</span>\n        <span class=\"o\">}</span>\n    <span class=\"o\">}</span>\n<span class=\"o\">}</span>\n</code></pre></div>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
       "neutral_comments": "",
       "correct_comments_html": "",
       "incorrect_comments_html": "",
-      "neutral_comments_html": "",
+      "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"https://learning.flatironschool.com/courses/6675/pages/switch-statements?module_item_id=538075\">Review the Switch Statements Lesson</a></li></ul><p></p>",
       "answers": [
         {
-          "id": 873,
-          "text": "namespaced",
+          "id": 5472,
+          "text": "It's snowy outside today",
           "comments": "",
-          "comments_html": "<p>Correct! Both <code>Teachers</code> and <code>Phrases</code> are namespaced inside of <code>Talk</code>. They\ncan be accessed using <code>::</code>.</p>",
-          "weight": 100.0,
-          "blank_id": "a1"
-        },
-        {
-          "id": 2518,
-          "text": "subclass inherited",
-          "comments": "",
-          "comments_html": "<p>There aren't any classes, nor any subclass inheritance, in the syntax above.\nYou might want to review the resource/s for this question.</p>",
-          "weight": 0.0,
-          "blank_id": "a1"
-        },
-        {
-          "id": 3929,
-          "text": "I don't know",
-          "comments": "",
-          "comments_html": "<p>Be sure to study the source/s for this question. You'll get it next time.</p>",
-          "weight": 0.0,
-          "blank_id": "a1"
-        },
-        {
-          "id": 9655,
-          "text": "Talk::Teachers",
-          "comments": "",
-          "comments_html": "<p>Correct! To <code>include</code> the <code>Teachers</code> module, we need to access it using <code>::</code>\non the module that contains it.</p>",
-          "weight": 100.0,
-          "blank_id": "a2"
-        },
-        {
-          "id": 8024,
-          "text": "Teachers::Talk",
-          "comments": "",
-          "comments_html": "<p>When using <code>::</code> to access a nested module, we put the module that contains the\nother module on the left side of the double colon.</p>",
-          "weight": 0.0,
-          "blank_id": "a2"
-        },
-        {
-          "id": 603,
-          "text": "Talk.Teachers",
-          "comments": "",
-          "comments_html": "<p>Not quite. This looks more like we're trying to call a method on <code>Talk</code>.</p>",
-          "weight": 0.0,
-          "blank_id": "a2"
+          "comments_html": "",
+          "weight": 100
         }
       ],
       "variables": null,
@@ -424,32 +484,175 @@
       "quiz_group_id": null,
       "assessment_question_id": 524977,
       "position": null,
-      "question_name": "Fill in Multiple Blanks Question",
-      "question_type": "fill_in_multiple_blanks_question",
-      "question_text": "<p>In order for Active Record to work, it is necessary to follow the naming\nconventions it is expecting. Specifically, the name of the class must be\n[answer1] and the name of the table must be [answer2].</p>",
+      "question_name": "True/False Question",
+      "question_type": "true_false_question",
+      "question_text": "<p>True or False: If <code>x</code> is true and <code>y</code> is false, then <code>x &amp;&amp; y</code> is true.</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
       "neutral_comments": "",
       "correct_comments_html": "",
       "incorrect_comments_html": "",
-      "neutral_comments_html": "",
+      "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"https://learning.flatironschool.com/courses/6675/pages/logical-operators?module_item_id=538078\">Review the Logical Operators Lesson</a></li></ul><p></p>",
       "answers": [
         {
-          "id": "8663",
-          "text": "singular",
           "comments": "",
           "comments_html": "",
-          "weight": 100.0,
-          "blank_id": "answer1"
+          "text": "True",
+          "weight": 0,
+          "id": 6560
         },
         {
-          "id": "5812",
-          "text": "plural",
           "comments": "",
           "comments_html": "",
-          "weight": 100.0,
-          "blank_id": "answer2"
+          "text": "False",
+          "weight": 100,
+          "id": 6488
+        }
+      ],
+      "variables": null,
+      "formulas": null,
+      "answer_tolerance": null,
+      "formula_decimal_places": null,
+      "matches": null,
+      "matching_answer_incorrect_matches": null
+    },
+    {
+      "id": 304521,
+      "quiz_id": 44747,
+      "quiz_group_id": null,
+      "assessment_question_id": 524978,
+      "position": null,
+      "question_name": "True/False Question",
+      "question_type": "true_false_question",
+      "question_text": "<p>True or False: If <code>x</code> is true and <code>y</code> is false, then <code>x || y</code> is true.</p>",
+      "points_possible": 1.0,
+      "correct_comments": "",
+      "incorrect_comments": "",
+      "neutral_comments": "",
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
+      "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"https://learning.flatironschool.com/courses/6675/pages/logical-operators?module_item_id=538078\">Review the Logical Operators Lesson</a></li></ul><p></p>",
+      "answers": [
+        {
+          "comments": "",
+          "comments_html": "",
+          "text": "True",
+          "weight": 100,
+          "id": 8988
+        },
+        {
+          "comments": "",
+          "comments_html": "",
+          "text": "False",
+          "weight": 0,
+          "id": 4926
+        }
+      ],
+      "variables": null,
+      "formulas": null,
+      "answer_tolerance": null,
+      "formula_decimal_places": null,
+      "matches": null,
+      "matching_answer_incorrect_matches": null
+    },
+    {
+      "id": 304522,
+      "quiz_id": 44747,
+      "quiz_group_id": null,
+      "assessment_question_id": 524979,
+      "position": null,
+      "question_name": "Multiple Choice Question",
+      "question_type": "multiple_choice_question",
+      "question_text": "<p>According to De Morgan's Law, what is the equivalent to <code>!p || !q</code>?</p>",
+      "points_possible": 1.0,
+      "correct_comments": "",
+      "incorrect_comments": "",
+      "neutral_comments": "",
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
+      "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"https://learning.flatironschool.com/courses/6675/pages/logical-operators?module_item_id=538078\">Review the Logical Operators Lesson</a></li></ul><p></p>",
+      "answers": [
+        {
+          "id": 6852,
+          "text": "",
+          "html": "<p><code>!(p || q)</code></p>",
+          "comments": "",
+          "comments_html": "<p>Note quite. Per De Morgan's Law, <code>!p || !q</code> is logically equivalent to\n<code>!(p &amp;&amp; q)</code>.</p>",
+          "weight": 0.0
+        },
+        {
+          "id": 131,
+          "text": "",
+          "html": "<p><code>!p &amp;&amp; !q</code></p>",
+          "comments": "",
+          "comments_html": "<p>Note quite. Per De Morgan's Law, <code>!p || !q</code> is logically equivalent to\n<code>!(p &amp;&amp; q)</code>.</p>",
+          "weight": 0.0
+        },
+        {
+          "id": 2521,
+          "text": "",
+          "html": "<p><code>!(p &amp;&amp; q)</code></p>",
+          "comments": "",
+          "comments_html": "<p>Correct! Per De Morgan's Law, <code>!p || !q</code> is logically equivalent to\n<code>!(p &amp;&amp; q)</code>.</p>",
+          "weight": 100.0
+        },
+        {
+          "id": 7901,
+          "text": "",
+          "html": "<p><code>p &amp;&amp; q</code></p>",
+          "comments": "",
+          "comments_html": "<p>Note quite. Per De Morgan's Law, <code>!p || !q</code> is logically equivalent to\n<code>!(p &amp;&amp; q)</code>.</p>",
+          "weight": 0.0
+        }
+      ],
+      "variables": null,
+      "formulas": null,
+      "answer_tolerance": null,
+      "formula_decimal_places": null,
+      "matches": null,
+      "matching_answer_incorrect_matches": null
+    },
+    {
+      "id": 304523,
+      "quiz_id": 44747,
+      "quiz_group_id": null,
+      "assessment_question_id": 524980,
+      "position": null,
+      "question_name": "Multiple Choice Question",
+      "question_type": "multiple_choice_question",
+      "question_text": "<p>Consider the following snippet of code:</p>\n<div class=\"highlight\"><pre class=\"highlight java\"><code><span class=\"k\">if</span> <span class=\"o\">(</span><span class=\"n\">temperature</span> <span class=\"o\">&lt;</span> <span class=\"o\">-</span><span class=\"mf\">100.0</span><span class=\"o\">)</span> <span class=\"o\">{</span>\n    <span class=\"nc\">System</span><span class=\"o\">.</span><span class=\"na\">out</span><span class=\"o\">.</span><span class=\"na\">println</span><span class=\"o\">(</span><span class=\"s\">\"Invalid temperature.\"</span><span class=\"o\">);</span>\n<span class=\"o\">}</span> <span class=\"k\">else</span> <span class=\"k\">if</span> <span class=\"o\">(</span><span class=\"n\">temperature</span> <span class=\"o\">&gt;</span> <span class=\"mf\">135.0</span><span class=\"o\">)</span> <span class=\"o\">{</span>\n    <span class=\"nc\">System</span><span class=\"o\">.</span><span class=\"na\">out</span><span class=\"o\">.</span><span class=\"na\">println</span><span class=\"o\">(</span><span class=\"s\">\"Invalid temperature.\"</span><span class=\"o\">);</span>\n<span class=\"o\">}</span> <span class=\"k\">else</span> <span class=\"o\">{</span>\n    <span class=\"c1\">// Other statements that deal with a valid temperature</span>\n<span class=\"o\">}</span>\n</code></pre></div>\n<p>The first two conditions seem to print the same message. How can you combine\nthese two conditions?</p>",
+      "points_possible": 1.0,
+      "correct_comments": "",
+      "incorrect_comments": "",
+      "neutral_comments": "",
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
+      "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"https://learning.flatironschool.com/courses/6675/pages/compound-conditionals?module_item_id=539038\">Review the Compound Conditionals Lesson</a></li></ul><p></p>",
+      "answers": [
+        {
+          "id": 6157,
+          "text": "",
+          "html": "<p><code>if (temperature &lt; -100.0 || temperature &gt; 135.0)</code></p>",
+          "comments": "",
+          "comments_html": "<p>Correct! We can use the logical operator <code>||</code> and turn this into a compound\nconditional.</p>",
+          "weight": 100.0
+        },
+        {
+          "id": 6214,
+          "text": "",
+          "html": "<p><code>if (temperature &lt; -100.0 &amp;&amp; temperature &gt; 135.0)</code></p>",
+          "comments": "",
+          "comments_html": "<p>Note quite. This boolean expression will always evaluate to <code>false</code> since it\nis impossible to have a temperature value be both less than -100 AND greater\nthan 135.</p>",
+          "weight": 0.0
+        },
+        {
+          "id": 2744,
+          "text": "",
+          "html": "<p>It's not possible.</p>",
+          "comments": "",
+          "comments_html": "<p>Not quite. We can combine two boolean expressions if appropriate. In this\ncase, we can use the <code>||</code> operator:\n<code>if (temperature &lt; -100.0 || temperature &gt; 135.0)</code></p>",
+          "weight": 0.0
         }
       ],
       "variables": null,
