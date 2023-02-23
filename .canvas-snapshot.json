@@ -123,7 +123,7 @@
           "blank_id": "a1"
         },
         {
-          "id": 4837,
+          "id": 3774,
           "text": "Brr it's freezing!",
           "comments": "",
           "comments_html": "<p>Correct! The program will print the message inside the <code>if</code> block since the\ninput is less than or equal to the freezing point, 32.0.</p>",
@@ -131,7 +131,7 @@
           "blank_id": "a2"
         },
         {
-          "id": 7768,
+          "id": 5341,
           "text": "Nothing",
           "comments": "",
           "comments_html": "<p>Not quite. The execution will fall into the <code>if</code> block and print the message\nsince the input is less than or equal to 32.0.\n<img src=\"https://curriculum-content.s3.amazonaws.com/java-mod-1/conditionals-quiz/conditional-quiz-question-1.png\" alt=\"flowchart\"></p>",
@@ -139,7 +139,7 @@
           "blank_id": "a2"
         },
         {
-          "id": 6471,
+          "id": 7642,
           "text": "Invalid input",
           "comments": "",
           "comments_html": "<p>Not quite. 17 is a valid input.</p>",
@@ -276,7 +276,7 @@
       "position": null,
       "question_name": "Multiple Dropdowns Question",
       "question_type": "multiple_dropdowns_question",
-      "question_text": "<p>Consider the following code:</p>\n<div class=\"highlight\"><pre class=\"highlight java\"><code><span class=\"kn\">import</span> <span class=\"nn\">java.util.InputMismatchException</span><span class=\"o\">;</span>\n<span class=\"kn\">import</span> <span class=\"nn\">java.util.Scanner</span><span class=\"o\">;</span>\n\n<span class=\"kd\">public</span> <span class=\"kd\">class</span> <span class=\"nc\">Main</span> <span class=\"o\">{</span>\n    <span class=\"kd\">public</span> <span class=\"kd\">static</span> <span class=\"kt\">void</span> <span class=\"nf\">main</span> <span class=\"o\">(</span><span class=\"nc\">String</span><span class=\"o\">[]</span> <span class=\"n\">args</span><span class=\"o\">)</span> <span class=\"o\">{</span>\n        <span class=\"nc\">Scanner</span> <span class=\"n\">scanner</span> <span class=\"o\">=</span> <span class=\"k\">new</span> <span class=\"nc\">Scanner</span><span class=\"o\">(</span><span class=\"nc\">System</span><span class=\"o\">.</span><span class=\"na\">in</span><span class=\"o\">);</span>\n\n        <span class=\"k\">try</span> <span class=\"o\">{</span>\n            <span class=\"c1\">// Prompt the user to enter a temperature in Fahrenheit</span>\n            <span class=\"nc\">System</span><span class=\"o\">.</span><span class=\"na\">out</span><span class=\"o\">.</span><span class=\"na\">println</span><span class=\"o\">(</span><span class=\"s\">\"Enter a temperature in degrees Fahrenheit:\"</span><span class=\"o\">);</span>\n            <span class=\"kt\">double</span> <span class=\"n\">temperature</span> <span class=\"o\">=</span> <span class=\"n\">scanner</span><span class=\"o\">.</span><span class=\"na\">nextDouble</span><span class=\"o\">();</span>\n\n            <span class=\"c1\">// If temperature is 32 degrees or below, alert the user it is freezing!</span>\n            <span class=\"k\">if</span> <span class=\"o\">(</span><span class=\"n\">temperature</span> <span class=\"o\">&lt;=</span> <span class=\"mf\">32.0</span><span class=\"o\">)</span> <span class=\"o\">{</span>\n                <span class=\"nc\">System</span><span class=\"o\">.</span><span class=\"na\">out</span><span class=\"o\">.</span><span class=\"na\">println</span><span class=\"o\">(</span><span class=\"s\">\"Brr it's freezing!\"</span><span class=\"o\">);</span>\n            <span class=\"o\">}</span> <span class=\"k\">else</span> <span class=\"k\">if</span> <span class=\"o\">(</span><span class=\"n\">temperature</span> <span class=\"o\">&gt;=</span> <span class=\"mf\">212.0</span><span class=\"o\">)</span> <span class=\"o\">{</span>\n                <span class=\"c1\">// If the temperature is 212 degrees or higher, alert the user it is boiling</span>\n                <span class=\"nc\">System</span><span class=\"o\">.</span><span class=\"na\">out</span><span class=\"o\">.</span><span class=\"na\">println</span><span class=\"o\">(</span><span class=\"s\">\"It's boiling!\"</span><span class=\"o\">);</span>\n            <span class=\"o\">}</span>\n\n        <span class=\"o\">}</span> <span class=\"k\">catch</span> <span class=\"o\">(</span><span class=\"nc\">InputMismatchException</span> <span class=\"n\">exception</span><span class=\"o\">)</span> <span class=\"o\">{</span>\n            <span class=\"nc\">System</span><span class=\"o\">.</span><span class=\"na\">out</span><span class=\"o\">.</span><span class=\"na\">println</span><span class=\"o\">(</span><span class=\"s\">\"Invalid input\"</span><span class=\"o\">);</span>\n        <span class=\"o\">}</span>\n    <span class=\"o\">}</span>\n<span class=\"o\">}</span>\n</code></pre></div>\n<p>When the user enters in 98.5 as a value, the program outputs: [a1]</p>\n\n<p>When the user enters in 17 as a value, the program outputs: [a2]</p>\n\n<p>When the user enters in 212.0 as a value, the program outputs: [a3]</p>",
+      "question_text": "<p>Consider the following code:</p>\n<div class=\"highlight\"><pre class=\"highlight java\"><code><span class=\"kn\">import</span> <span class=\"nn\">java.util.InputMismatchException</span><span class=\"o\">;</span>\n<span class=\"kn\">import</span> <span class=\"nn\">java.util.Scanner</span><span class=\"o\">;</span>\n\n<span class=\"kd\">public</span> <span class=\"kd\">class</span> <span class=\"nc\">Main</span> <span class=\"o\">{</span>\n    <span class=\"kd\">public</span> <span class=\"kd\">static</span> <span class=\"kt\">void</span> <span class=\"nf\">main</span> <span class=\"o\">(</span><span class=\"nc\">String</span><span class=\"o\">[]</span> <span class=\"n\">args</span><span class=\"o\">)</span> <span class=\"o\">{</span>\n        <span class=\"nc\">Scanner</span> <span class=\"n\">scanner</span> <span class=\"o\">=</span> <span class=\"k\">new</span> <span class=\"nc\">Scanner</span><span class=\"o\">(</span><span class=\"nc\">System</span><span class=\"o\">.</span><span class=\"na\">in</span><span class=\"o\">);</span>\n\n        <span class=\"k\">try</span> <span class=\"o\">{</span>\n            <span class=\"c1\">// Prompt the user to enter a temperature in Fahrenheit</span>\n            <span class=\"nc\">System</span><span class=\"o\">.</span><span class=\"na\">out</span><span class=\"o\">.</span><span class=\"na\">println</span><span class=\"o\">(</span><span class=\"s\">\"Enter a temperature in degrees Fahrenheit:\"</span><span class=\"o\">);</span>\n            <span class=\"kt\">double</span> <span class=\"n\">temperature</span> <span class=\"o\">=</span> <span class=\"n\">scanner</span><span class=\"o\">.</span><span class=\"na\">nextDouble</span><span class=\"o\">();</span>\n\n            <span class=\"c1\">// If temperature is 32 degrees or below, alert the user it is freezing!</span>\n            <span class=\"k\">if</span> <span class=\"o\">(</span><span class=\"n\">temperature</span> <span class=\"o\">&lt;=</span> <span class=\"mf\">32.0</span><span class=\"o\">)</span> <span class=\"o\">{</span>\n                <span class=\"nc\">System</span><span class=\"o\">.</span><span class=\"na\">out</span><span class=\"o\">.</span><span class=\"na\">println</span><span class=\"o\">(</span><span class=\"s\">\"Brr it's freezing!\"</span><span class=\"o\">);</span>\n            <span class=\"o\">}</span> <span class=\"k\">else</span> <span class=\"k\">if</span> <span class=\"o\">(</span><span class=\"n\">temperature</span> <span class=\"o\">&gt;=</span> <span class=\"mf\">212.0</span><span class=\"o\">)</span> <span class=\"o\">{</span>\n                <span class=\"c1\">// If the temperature is 212 degrees or higher, alert the user it is boiling</span>\n                <span class=\"nc\">System</span><span class=\"o\">.</span><span class=\"na\">out</span><span class=\"o\">.</span><span class=\"na\">println</span><span class=\"o\">(</span><span class=\"s\">\"It's boiling!\"</span><span class=\"o\">);</span>\n            <span class=\"o\">}</span>\n\n        <span class=\"o\">}</span> <span class=\"k\">catch</span> <span class=\"o\">(</span><span class=\"nc\">InputMismatchException</span> <span class=\"n\">exception</span><span class=\"o\">)</span> <span class=\"o\">{</span>\n            <span class=\"nc\">System</span><span class=\"o\">.</span><span class=\"na\">out</span><span class=\"o\">.</span><span class=\"na\">println</span><span class=\"o\">(</span><span class=\"s\">\"Invalid input\"</span><span class=\"o\">);</span>\n        <span class=\"o\">}</span>\n    <span class=\"o\">}</span>\n<span class=\"o\">}</span>\n</code></pre></div>\n<p>When the user enters in 72 as a value, the program outputs: [a1]</p>\n\n<p>When the user enters in 30.1 as a value, the program outputs: [a2]</p>\n\n<p>When the user enters in 212.0 as a value, the program outputs: [a3]</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
@@ -318,7 +318,7 @@
           "blank_id": "a1"
         },
         {
-          "id": 8562,
+          "id": 7235,
           "text": "Brr it's freezing!",
           "comments": "",
           "comments_html": "<p>Correct! The program will print the message inside the <code>if</code> block since the\ninput is less than or equal to the freezing point, 32.0.</p>",
@@ -326,7 +326,7 @@
           "blank_id": "a2"
         },
         {
-          "id": 9929,
+          "id": 4961,
           "text": "It's boiling!",
           "comments": "",
           "comments_html": "<p>Not quite. The execution will not fall into the <code>else if</code> block since the\nfirst conditional specified in the <code>if</code> statement has been satisfied. The\nexecution will then skip over the <code>else if</code> block.\n<img src=\"https://curriculum-content.s3.amazonaws.com/java-mod-1/conditionals-quiz/conditional-quiz-question-3.png\" alt=\"flowchart\"></p>",
@@ -334,7 +334,7 @@
           "blank_id": "a2"
         },
         {
-          "id": 9086,
+          "id": 8600,
           "text": "Nothing",
           "comments": "",
           "comments_html": "<p>Not quite. The execution will fall into the <code>if</code> block and print the message\nsince the input is less than or equal to 32.0.\n<img src=\"https://curriculum-content.s3.amazonaws.com/java-mod-1/conditionals-quiz/conditional-quiz-question-3.png\" alt=\"flowchart\"></p>",
@@ -342,7 +342,7 @@
           "blank_id": "a2"
         },
         {
-          "id": 7767,
+          "id": 5073,
           "text": "Invalid input",
           "comments": "",
           "comments_html": "<p>Not quite. 17 is a valid input.</p>",
@@ -350,7 +350,7 @@
           "blank_id": "a2"
         },
         {
-          "id": 869,
+          "id": 3079,
           "text": "It's boiling!",
           "comments": "",
           "comments_html": "<p>Correct! The program will print the message inside the <code>else if</code> block since\nthe input is greater than or equal to the boiling point, 212.0.</p>",
@@ -358,7 +358,7 @@
           "blank_id": "a3"
         },
         {
-          "id": 7111,
+          "id": 6377,
           "text": "Brr it's freezing!",
           "comments": "",
           "comments_html": "<p>Not quite. The execution will not fall into the <code>if</code> block since the input is\ngreater than 32.0. Instead, it will then check the conditional specified in\nthe <code>else if</code> statement. Since 212.0 is indeed greater than or equal to the\nboiling point, it will fall into the <code>else if</code> block.\n<img src=\"https://curriculum-content.s3.amazonaws.com/java-mod-1/conditionals-quiz/conditional-quiz-question-3.png\" alt=\"flowchart\"></p>",
@@ -366,7 +366,7 @@
           "blank_id": "a3"
         },
         {
-          "id": 4081,
+          "id": 6526,
           "text": "Nothing",
           "comments": "",
           "comments_html": "<p>Not quite. The execution will fall into the <code>else if</code> block and print the\nmessage since the input is greater than or equal to 212.0.\n<img src=\"https://curriculum-content.s3.amazonaws.com/java-mod-1/conditionals-quiz/conditional-quiz-question-3.png\" alt=\"flowchart\"></p>",
@@ -374,7 +374,7 @@
           "blank_id": "a3"
         },
         {
-          "id": 6217,
+          "id": 837,
           "text": "Invalid input",
           "comments": "",
           "comments_html": "<p>Not quite. 212.0 is a valid input.</p>",
